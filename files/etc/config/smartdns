@@ -1,0 +1,274 @@
+
+config smartdns
+	option port '6053'
+	option prefetch_domain '1'
+	option cache_size '5000'
+	option rr_ttl_min '300'
+	option rr_ttl_max '3600'
+	option coredump '0'
+	option server_name 'china'
+	option seconddns_server_group 'world'
+	option force_aaaa_soa '1'
+	option ipv6_server '0'
+	option seconddns_port '5335'
+	option serve_expired '1'
+	option tcp_server '1'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_rule_soa '1'
+	option seconddns_no_cache '1'
+	option seconddns_tcp_server '0'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option seconddns_no_dualstack_selection '0'
+	option redirect 'none'
+	option enabled '1'
+	option dualstack_ip_selection '1'
+	option seconddns_enabled '1'
+	list old_redirect 'none'
+	list old_port '6053'
+	list old_enabled '1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '百度'
+	option ip '180.76.76.76'
+	option blacklist_ip '1'
+	option server_group 'china'
+
+config server
+	option name '腾讯1'
+	option type 'udp'
+	option enabled '1'
+	option ip '119.29.29.29'
+	option blacklist_ip '1'
+	option server_group 'china'
+
+config server
+	option name '腾讯2'
+	option type 'udp'
+	option ip '182.254.116.116'
+	option blacklist_ip '1'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name '阿里1'
+	option type 'udp'
+	option enabled '1'
+	option ip '223.5.5.5'
+	option blacklist_ip '1'
+	option server_group 'china'
+
+config server
+	option type 'udp'
+	option enabled '1'
+	option blacklist_ip '1'
+	option server_group 'china'
+	option name '运营商'
+	option ip '211.148.192.141'
+
+config server
+	option name '114'
+	option type 'tcp'
+	option ip '114.114.114.114'
+	option blacklist_ip '1'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option type 'tcp'
+	option ip '210.0.255.250'
+	option blacklist_ip '0'
+	option name '香港环球全域电讯'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option type 'udp'
+	option name '广州电信'
+	option ip '202.96.128.86'
+	option blacklist_ip '1'
+	option enabled '1'
+	option server_group 'china'
+
+config server
+	option name '台湾'
+	option ip '168.95.1.1'
+	option type 'tcp'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option type 'tcp'
+	option blacklist_ip '0'
+	option enabled '1'
+	option name 'Google'
+	option ip '8.8.4.4'
+	option server_group 'world'
+
+config server
+	option name '澳门'
+	option ip '202.175.82.46'
+	option type 'tcp'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name '红鱼'
+	option ip 'dns.rubyfish.cn'
+	option type 'tls'
+	option blacklist_ip '1'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name '清华'
+	option ip '101.6.6.6'
+	option type 'tcp'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name 'Yandex'
+	option ip '77.88.8.8'
+	option type 'tcp'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name '台湾 Quad101'
+	option ip '101.101.101.101'
+	option type 'tls'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option blacklist_ip '1'
+	option enabled '0'
+	option name 'Google'
+	option ip '8.8.4.4'
+	option type 'tls'
+	option server_group 'world'
+
+config server
+	option name '新加坡DNS'
+	option ip '202.56.128.30'
+	option type 'tcp'
+	option server_group 'china'
+	option enabled '0'
+
+config server
+	option name 'Cloudflare'
+	option ip '1.1.1.1'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'opendns'
+	option ip '208.67.222.222'
+	option type 'tcp'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'opendns'
+	option ip '208.67.222.222'
+	option server_group 'world'
+	option type 'udp'
+	option enabled '0'
+
+config server
+	option name 'opendns'
+	option ip 'https://doh.opendns.com/dns-query'
+	option type 'https'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'google'
+	option type 'tls'
+	option server_group 'world'
+	option ip '8.8.8.8'
+	option enabled '0'
+
+config server
+	option server_group 'world'
+	option ip '8.8.8.8'
+	option type 'tcp'
+	option name 'google'
+	option enabled '1'
+
+config server
+	option name 'google'
+	option ip 'https://dns.google/dns-query'
+	option type 'https'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'IBM'
+	option ip 'dns.quad9.net'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'Cloudflare_ipv6'
+	option ip '2001:2001::1111'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'Cloudflare_ipv6'
+	option ip '2001:2001::1001'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'google_ipv6'
+	option ip '2001:4860:4860::8888'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'google_ipv6'
+	option ip '2001:4860:4860::8844'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'baidu_ipv6'
+	option ip '2400:da00::6666'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'china_ipv6'
+	option ip '240C::6666'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option name 'china_ipv6'
+	option ip '240C::6644'
+	option type 'tls'
+	option server_group 'world'
+	option enabled '0'
+
+config server
+	option enabled '1'
+	option name 'IBM'
+	option ip '9.9.9.9'
+	option type 'tcp'
+	option blacklist_ip '0'
+	option server_group 'china'
+
