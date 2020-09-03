@@ -246,6 +246,7 @@ user_rules:
 - '@@||btrace.qq.com^$important'
 - '@@||livep.l.qq.com^$important'
 - '@@||oth.eve.mdt.qq.com^$important'
+- '@@||ms.vipstatic.com^$important'
 - ""
 dhcp:
   enabled: false
