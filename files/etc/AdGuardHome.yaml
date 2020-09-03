@@ -247,6 +247,8 @@ user_rules:
 - '@@||livep.l.qq.com^$important'
 - '@@||oth.eve.mdt.qq.com^$important'
 - '@@||ms.vipstatic.com^$important'
+- '@@||click.union.vip.com^$important'
+- '@@||a.union.mi.com^$important'
 - ""
 dhcp:
   enabled: false
