@@ -66,17 +66,17 @@ tls:
   certificate_path: ""
   private_key_path: ""
 filters:
-- enabled: true
+- enabled: false
   url: https://anti-ad.net/easylist.txt
-  name: anti-ad-easylist默认开第1个
+  name: anti-ad-easylist
   id: 1581953052
-- enabled: true
+- enabled: false
   url: https://halflife.coding.net/p/list/d/list/git/raw/master/ad.txt
-  name: AdFilters默认开第2个
+  name: AdFilters
   id: 1593095159
 - enabled: false
   url: https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts
-  name: googlehosts(正确出墙IP)
+  name: googlehosts
   id: 1594487153
 - enabled: false
   url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
@@ -94,10 +94,10 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easylistchina.txt
   name: EasyList China
   id: 1565484166
-- enabled: false
-  url: https://hosts-file.net/.%5Cad_servers.txt
-  name: hpHosts’ Ad and tracking servers
-  id: 1565484167
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts.txt
+  name: neoHosts full
+  id: 1575618240
 - enabled: false
   url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
   name: Peter Lowe’s Ad and tracking server list​
